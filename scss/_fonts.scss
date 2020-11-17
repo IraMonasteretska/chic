@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSansRegular.woff2'),
+        url('../fonts/OpenSansRegular.woff');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSansSemiBold.woff2'),
+        url('../fonts/OpenSansSemiBold.woff');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSansBold.woff2'),
+        url('../fonts/OpenSansBold.woff');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/HelveticaNeueCyr-Roman.woff2'),
+        url('../fonts/HelveticaNeueCyr-Roman.woff');
+    font-weight: 400;
+    font-display: swap;
+}
