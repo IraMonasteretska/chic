@@ -1,47 +1,7 @@
-.slider {
-    position: relative;
-    
-}
-
-.slider__item {
-    outline: none;
-    img {
-        width: 100%;
-    }
-}
-
-.slick-arrow {
-	position: absolute;
-	top: 50%;
-	margin-top: -32px;
-	font-size: 42px;
-	color: #4404cc;
-	background: none;
-	border: none;
-	cursor: pointer;
-	transition: all 0.5s ease;
-}
-
-.slick-prev {
-	left: -52px;
-}
-
-.slick-prev:hover {
-	left: -56px;
-}
-
-.slick-next {
-	right: -52px;
-}
-
-.slick-next:hover {
-	right: -56px;
-}
-
 .slick-dots {
     position: absolute;
     bottom: 37px;
-	display: flex;
+    display: flex;
     justify-content: center;
     left: 50%;
     transform: translateX(-50%);
@@ -50,79 +10,104 @@
 
 .slick-dots li {
     margin-right: 17px;
-	
 }
 
 .slick-dots li button {
-	background: rgba(224, 175, 188, 0.2);
-	border-radius: 50%;
-	width: 16px;
-	height: 16px;
-	display: block;
-	border: none;
+    background: rgba(224, 175, 188, 0.2);
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    display: block;
+    border: none;
     font-size: 0;
     outline: none;
-	cursor: pointer;
+    cursor: pointer;
 }
 
 .slick-dots li.slick-active button {
-	background:url('../img/dots-active.svg') no-repeat;
+    background: url('../img/icons/dots-active.svg') no-repeat;
 }
 
 .first {
     position: relative;
 }
 
+.first-slider {
+    .slider__item {
+        height: 660px;
+    }
+
+    .slider__item img {
+        height: 660px;
+        object-fit: cover;
+    }
+}
+
+
 .animation {
-    position: absolute;
     z-index: 10;
-    &-1 img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    pointer-events: none;
+
+
+    &-1 {
         position: absolute;
         top: 70px;
         left: 110px;
         width: 548px;
         height: 548px;
         transform: translateX(0);
-        animation: circle 5s linear infinite;
+        animation: circle 4s linear infinite;
     }
-    &-2 img {
+
+    &-2 {
         position: absolute;
         top: 93px;
         left: 110px;
         width: 514px;
         height: 514px;
         transform: translateX(0);
-        animation: circle-back 5s linear infinite;
+        animation: circle-back 4s linear infinite;
     }
 
-    &-3 img {
+    &-3 {
         position: absolute;
         top: 140px;
         left: 125px;
         width: 440px;
         height: 440px;
         transform: translateX(0);
-        animation: circle 5s linear infinite;
+        animation: circle 4s linear infinite;
     }
 
-    &-4 img {
+    &-4 {
         position: absolute;
         top: 160px;
         left: 200px;
         width: 365px;
         height: 365px;
         transform: translateX(0);
-        animation: circle-back 6s linear infinite;
+        animation: circle-back 4s linear infinite;
+    }
+
+    &-5 {
+        position: absolute;
+        top: 205px;
+        left: 190px;
+        width: 390px;
+        height: auto;
+        transform: translateX(0);
+
     }
 }
 
 .logo {
     position: absolute;
-    padding-top: 205px;
-    left: 190px;
-    width: 390px;
-    height: 365px;
-    transform: translateX(0); 
+
     &:before {
         content: '';
         display: block;
@@ -134,6 +119,7 @@
         transform: translateY(-270px);
         animation: line-up 3s linear infinite;
     }
+
     &:after {
         content: '';
         display: block;
@@ -151,41 +137,47 @@
     0% {
         transform: translateY(164px);
     }
+
     50% {
         transform: translateY(96px);
     }
+
     100% {
         transform: translateY(164px);
     }
-  }
+}
 
 @keyframes line-up {
     0% {
         transform: translateY(-270px);
     }
+
     50% {
         transform: translateY(-200px);
     }
+
     100% {
         transform: translateY(-270px);
     }
-  }
+}
 
 
 @keyframes circle {
     0% {
-        transform: rotate(0deg) translate(-20px) rotate(0deg);
+        transform: rotate(0deg) translate(-10px) rotate(0deg);
     }
-    100% {
-        transform: rotate(360deg) translate(-20px) rotate(360deg);
-    }
-  }
 
-  @keyframes circle-back {
-    0% {
-        transform: rotate(0deg) translate(20px) rotate(0deg);
-    }
     100% {
-        transform: rotate(-360deg) translate(20px) rotate(360deg);
+        transform: rotate(-360deg) translate(-10px) rotate(360deg);
+    }
+}
+
+@keyframes circle-back {
+    0% {
+        transform: rotate(0deg) translate(10px) rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg) translate(10px) rotate(360deg);
     }
 }

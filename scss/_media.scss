@@ -1,0 +1,283 @@
+@media screen and (max-width: 1630px) {
+    .about__text {
+        margin: 0 auto 45px;
+        width: 85%;
+    }
+    .about__scroll {
+        left: 30px;
+    }
+    .slick-prev {
+        left: 11%;
+    }
+    .slick-next {
+        left: 16%;
+    }
+    .gallery-slider .slick-dots {
+        margin-left: 6%;
+    }
+}
+
+@media screen and (max-width: 1230px) {
+    .container {
+        width: 980px;
+    }
+
+    .phone__number {
+        display: none;
+    }
+    .about {
+        padding-top: 160px;
+        &__scroll {
+            left: 30px;
+        }
+        &__phone {
+            right: 50px;
+        }
+        &__btn {
+            margin-bottom: 80px;
+        }
+    }
+    .article__title:after {
+        font-size: calc(64px + (16 + 16 * 0.7)  * ((100vw - 1025px) / 1920));
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .container {
+        width: 720px;
+    }
+    .menu {
+        display: none;
+
+        &__burger {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 64px;
+            height: 64px;
+            border: 1px solid #e0e0e0;
+            img {
+                width: 28px;
+            }
+        }
+    }
+    .gallery {
+        padding-top: 45px;
+    }
+    .gallery-slider {
+        &:before {
+            width: 100%;
+        }
+        .slick-dots {
+            margin-left: 0;
+            width: 77%;
+        }
+    }
+    .about {
+        padding-bottom: 0;
+    }
+    .about__phone {
+        right: 30px;
+    }
+    .article__content {
+        padding-left: 80px;
+        padding-top: 80px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 540px;
+    }
+
+    .first-slider {
+        .slider__item {
+            height: 360px;
+        }
+
+        .slider__item img {
+            height: 360px;
+            object-fit: cover;
+        }
+
+        .slick-dots {
+            bottom: 18px;
+        }
+    }
+    .animation {
+        &-1 {
+            width: 270px;
+            height: 270px;
+            left: 25px;
+            top: 45px;
+        }
+
+        &-2 {
+            width: 253px;
+            height: 253px;
+            left: 25px;
+            top: 57px;
+        }
+
+        &-3 {
+            width: 217px;
+            height: 217px;
+            left: 33px;
+            top: 80px;
+        }
+
+        &-4 {
+            width: 209px;
+            height: 209px;
+            left: 60px;
+            top: 89px;
+        }
+
+        &-5 {
+            width: 192px;
+            height: 192px;
+            left: 54px;
+            top: 112px;
+        }
+
+        .logo {
+            width: 192px;
+
+            &:before {
+                height: 80px;
+                transform: translateY(-128px);
+
+            }
+
+            &:after {
+                height: 80px;
+                transform: translateY(67px);
+
+            }
+        }
+    }
+
+    @keyframes line-down {
+        0% {
+            transform: translateY(67px);
+        }
+
+        50% {
+            transform: translateY(87px);
+        }
+
+        100% {
+            transform: translateY(67px);
+        }
+    }
+
+    @keyframes line-up {
+        0% {
+            transform: translateY(-128px);
+        }
+
+        50% {
+            transform: translateY(-148px);
+        }
+
+        100% {
+            transform: translateY(-128px);
+        }
+    }
+    .about {
+        padding-top: 45px;
+        &__text {
+            width: 80%;
+        }
+        &__phone {
+            right: 10px;
+        }
+        &__scroll {
+            left: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .container,
+    .header-container {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .lang {
+        display: none;
+    }
+
+    .social {
+        &__item {
+            width: 48px;
+            height: 48px;
+        }
+
+        &__face path {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    .phone__link {
+        width: 48px;
+        height: 48px;
+    }
+
+    .menu__burger {
+        width: 48px;
+        height: 48px;
+
+        img {
+            width: 18px;
+        }
+    }
+    .about__btn {
+        padding: 24px 0;
+    }
+    .about {
+        &__phone {
+        width: 48px; 
+        height: 48px;
+            &--svg {
+                width: 34px;
+                height: 34px;
+            }
+            &--svg path {
+                width: 34px;
+                height: 34px;
+            }
+        }
+        &__scroll {
+            left: 5px;
+        }
+        &__btn {
+            margin-bottom: 50px;
+        }
+        &__text {
+            width: 100%;
+        }
+    }
+    .section__title {
+        margin-bottom: 50px;
+    }
+    .gallery-slider {
+        margin-top: 100px;
+        margin-bottom: 90px;
+        &:before {
+            top: -75px;
+            height: 575px;
+        }
+        &:after {
+            background-size: contain;
+        }
+        .slick-dots {
+            bottom: -110px;
+        }
+    }
+    
+}

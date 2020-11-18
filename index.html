@@ -30,28 +30,17 @@
 						</a>
 					</div>
 				</div>
-				<div class="header__lang lang">
-					<!--<ul>
-						<li class="lang-item lang-item-2 lang-item-en lang-item-first">
-							<a lang="en-US" hreflang="en-US" href="http://localhost/wp/chic/en/home/">English</a>
-						</li>
-						<li class="lang-item lang-item-5 lang-item-ru current-lang">
-							<a lang="ru-RU" hreflang="ru-RU" href="http://localhost/wp/chic/">Русский</a>
-						</li>
-						<li class="lang-item lang-item-9 lang-item-cs">
-							<a lang="cs-CZ" hreflang="cs-CZ" href="http://localhost/wp/chic/cs/glavnaya/">Čeština</a>
-						</li>
-					</ul> -->
-					<div class="lang__item current">
-					 	<a href="#">Сz</a>
-					</div>
-					<div class="lang__item">
+				<ul class="header__lang lang">
+					<li class="lang-item lang-item-2 lang-item-en lang-item-first">
+						<a href="#">Сz</a>
+					</li>
+					<li class="lang-item lang-item-5 lang-item-ru current-lang">
 						<a href="#">Ru</a>
-					</div>
-					<div class="lang__item">
+					</li>
+					<li class="lang-item lang-item-9 lang-item-cs">
 						<a href="#">Eng</a>
-					</div>
-				</div>
+					</li>
+				</ul>
 				<ul class="header__menu menu">
 					<li class="menu__item"><a href="#">O nas</a></li>
 					<li class="menu__item"><a href="#">Galerie</a></li>
@@ -69,6 +58,9 @@
 					<a class="phone__number" href="tel:+420773217914">
 						+42 077 321 79 14
 					</a>
+					<button class="menu__burger">
+						<img src="img/icons/burger.svg" alt="burger">
+					</button>
 				</div>
 			</nav>
 		</div>
@@ -111,10 +103,147 @@
 				</div>
 			</div>
 		</section>
+		<section class="about">
+			<p class="about__scroll">Scroll</p>
+			<div class="about__phone popup__btn">
+				<svg class="about__phone--svg" width="52" height="52" viewbox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M44.2937 7.70085C34.1874 -2.40242 17.8041 -2.4 7.70085 7.70641C-2.40242 17.8128 -2.4 34.1959 7.70641 44.2992C17.8128 54.4025 34.1959 54.4001 44.2992 44.2937C49.1514 39.44 51.8765 32.8575 51.875 25.9945C51.8736 19.1326 49.1465 12.5522 44.2937 7.70085ZM39.3118 36.1686C39.3107 36.1697 39.3096 36.1709 39.3084 36.172V36.1635L37.9973 37.4658C36.3018 39.1827 33.8325 39.8892 31.4854 39.3288C29.1208 38.6959 26.8729 37.6884 24.827 36.3446C22.9262 35.1298 21.1646 33.7097 19.5743 32.1097C18.1111 30.6571 16.7965 29.0622 15.6499 27.3487C14.3958 25.5049 13.4032 23.4963 12.7002 21.3801C11.8943 18.8941 12.5621 16.1662 14.4252 14.3335L15.9604 12.7983C16.3873 12.3696 17.0808 12.3681 17.5095 12.7949C17.5106 12.796 17.5118 12.7971 17.5129 12.7983L22.3602 17.6455C22.7889 18.0724 22.7904 18.766 22.3636 19.1946C22.3625 19.1957 22.3614 19.1968 22.3602 19.198L19.5139 22.0443C18.6972 22.8521 18.5945 24.1357 19.2724 25.0631C20.3019 26.4759 21.4411 27.8053 22.6793 29.0392C24.0599 30.4258 25.5608 31.6871 27.1643 32.8084C28.0909 33.4547 29.347 33.3457 30.1485 32.5496L32.8999 29.7551C33.3267 29.3264 34.0203 29.3249 34.4489 29.7517C34.45 29.7528 34.4512 29.7539 34.4524 29.7551L39.3083 34.6196C39.7371 35.0464 39.7386 35.7399 39.3118 36.1686Z" fill="none"/>
+				</svg>
+			</div>
+			<div class="container">
+				<a class="about__btn popup__btn" href="#">Domluvte si schůzku</a>
+				<h2 class="about__title section__title slideInUp wow" data-wow-duration="1s">
+					O nás
+				</h2>				
+				<p class="about__text slideInUp wow" data-wow-duration="2s">
+					Toto je místo síly pro těžko opakovatelný styling a dokonalý make-up, nejznámější nehtové vzory v tomto vesmíru a dokonalé obočí.
+					Chic Beauty Studio je 34 kosm etických barů v 10 zemích, desítky tisíc copánků a stylingu, stejný počet make-upů a dvakrát tolik manikúry s pedikúrou a obočím!
+				</p>
+				<p class="about__text slideInUp wow" data-wow-duration="2s">
+					A společně nemůžete spočítat, kolik dívek a jejich šťastných, hrdých a krásných příběhů s Chic. Toto je místo síly pro těžko opakovatelný styling a dokonalý make-up, nejznámější nehtové vzory v tomto vesmíru a dokonalé obočí.
+					Chic Beauty Studio je 34 kosmetických barů v 10 zemích, desítky tisíc copánků a stylingu, stejný počet make-upů a dvakrát tolik manikúry s pedikúrou a obočím!
+				</p>
+			</div>
+		</section>
+		<section class="gallery">
+			<div class="header-container">
+				<h2 class="gallery__title section__title">
+					Galerie
+				</h2>
+				<div class="gallery-slider">
+					<div class="gallery-slider__item">
+						<img src="img/gallery-1.jpg" alt="eyebrows">
+					</div>
+					<div class="gallery-slider__item">
+						<img src="img/gallery-2.jpg" alt="hands">
+					</div>
+					<div class="gallery-slider__item">
+						<img src="img/gallery-3.jpg" alt="mask">
+					</div>
+					<div class="gallery-slider__item">
+						<img src="img/gallery-4.jpg" alt="fingers">
+					</div>
+					<div class="gallery-slider__item">
+						<img src="img/gallery-1.jpg" alt="fingers">
+					</div>
+					<div class="gallery-slider__item">
+						<img src="img/gallery-2.jpg" alt="fingers">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="services">
+			<div class="container">
+				<h2 class="services__title section__title">
+					Sluzby
+				</h2>
+				<div class="services__articles">
+					<article class="article">
+						<div class="article__img">
+							<img src="img/article-1.jpg" alt="girl smile">
+						</div>
+						<div class="article__content">
+							<h3 class="article__title">
+								PMU
+							</h3>
+							<p class="article__text">
+								Nunc sed augue ornare quam iaculis elementum ac vel magna. Proin scelerisque dolor 
+								sit amet justo convallis malesuada. Interdum et malesuada fames ac ante ipsum primis 
+								in faucibus. Sed placerat magna sit amet magna ornare tincidunt. Phasellus ac turpis erat. Vivamus id ullamcorper ligula, vitae vestibulum nulla.
+							</p>
+						</div>
+					</article>
+					<article class="article pedikura">
+						<div class="article__content pedikura__content">
+							<h3 class="article__title pedikura__title">
+								MANIKURA PEDIKURA
+							</h3>
+							<p class="article__text">
+								Nunc sed augue ornare quam iaculis elementum ac vel magna. Proin scelerisque dolor sit amet justo convallis malesuada. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed placerat magna sit amet magna ornare tincidunt. Phasellus ac turpis erat. Vivamus id ullamcorper ligula, vitae vestibulum nulla.
+							</p>
+						</div>
+						<div class="article__img">
+							<img src="img/article-2.jpg" alt="girl smile">
+						</div>
+					</article>
+					<article class="article kosmetika">
+						<div class="article__img">
+							<img src="img/article-3.jpg" alt="girl smile">
+						</div>
+						<div class="article__content">
+							<h3 class="article__title kosmetika__title">
+								KOSMETIKA
+							</h3>
+							<p class="article__text">
+								Nunc sed augue ornare quam iaculis elementum ac vel magna. Proin scelerisque dolor sit amet justo convallis malesuada. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed placerat magna sit amet magna ornare tincidunt. Phasellus ac turpis erat. Vivamus id ullamcorper ligula, vitae vestibulum nulla.
+							</p>
+						</div>
+					</article>
+					<article class="article tatoo">
+						<div class="article__content pedikura__content">
+							<h3 class="article__title tatoo__title">
+								MINI TATOO
+							</h3>
+							<p class="article__text">
+								Nunc sed augue ornare quam iaculis elementum ac vel magna. Proin scelerisque dolor sit amet justo convallis malesuada. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed placerat magna sit amet magna ornare tincidunt. Phasellus ac turpis erat. Vivamus id ullamcorper ligula, vitae vestibulum nulla.
+							</p>
+						</div>
+						<div class="article__img">
+							<img src="img/article-4.jpg" alt="girl smile">
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+		<section class="price" id="price">
+
+		</section>
 	</main>
+	<div style="display: none;">
+		<div class="popup" id="popup">
+			<div class="box-modal_close arcticmodal-close">
+				<svg class="popup__close" width="44" height="44" viewbox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M28 17.41L26.59 16L21 21.59L15.41 16L14 17.41L19.59 23L14 28.59L15.41 30L21 24.41L26.59 30L28 28.59L22.41 23L28 17.41Z" fill="white"/>
+					<path d="M22.0177 1C10.8756 1 1.7317 9.739 1.07433 20.7288C1.02419 21.2956 0.999417 21.8687 1.00001 22.4479C0.99625 25.5657 1.73199 28.6398 3.14673 31.4174C3.20804 31.5382 3.27113 31.659 3.33614 31.778V31.3375H3.41042C3.38257 31.2762 3.35288 31.2148 3.32318 31.1535C2.22718 28.8242 1.66021 26.2808 1.66299 23.7062C1.66299 14.0416 9.51814 6.178 19.1746 6.178C28.831 6.178 36.688 14.0416 36.688 23.7062C36.6914 26.4459 36.0488 29.1478 34.8124 31.5921C34.7809 31.6553 34.7493 31.7166 34.7159 31.7798C34.4337 32.3234 34.1225 32.8514 33.7836 33.3615C33.7446 33.4228 33.7038 33.4841 33.6611 33.5436C30.5079 38.1807 25.1913 41.2325 19.1746 41.2325C13.0112 41.2325 7.5813 38.0302 4.46151 33.1998C4.41695 33.1329 4.37238 33.0641 4.33152 32.9953C4.32943 33.0188 4.32444 33.0419 4.31665 33.0641C4.30902 33.0861 4.29907 33.1073 4.28695 33.1273C4.28249 33.1366 4.27686 33.1454 4.27022 33.1533C4.26837 33.157 4.26651 33.1589 4.26464 33.1626C4.26265 33.166 4.26014 33.1692 4.25721 33.1719C4.23968 33.195 4.21907 33.2157 4.19595 33.2332C4.22938 33.2852 4.26464 33.3373 4.29993 33.3893C5.03889 34.5029 5.88812 35.539 6.83477 36.482C6.84407 36.4913 6.85334 36.5006 6.8626 36.5099C10.6862 40.5077 16.066 43 22.0177 43C29.3213 43 35.7651 39.2476 39.5218 33.5659C39.5627 33.5064 39.6017 33.447 39.6407 33.3875C39.9601 32.8931 40.2609 32.3857 40.5376 31.8635C40.5729 31.7984 40.6082 31.7334 40.6397 31.6683C42.1945 28.6834 43.0043 25.3662 43 22C43 10.4211 33.5868 1 22.0177 1ZM3.31388 31.5141C3.25631 31.4044 3.2006 31.2947 3.14673 31.1832C2.45176 29.7869 1.928 28.3117 1.58686 26.7895C1.93994 28.3058 2.46322 29.7772 3.14673 31.1758C3.2006 31.2892 3.25631 31.4025 3.31388 31.5141ZM6.93504 36.4337C6.92763 36.4263 6.92017 36.417 6.91276 36.4095C6.66946 36.1549 6.43367 35.8928 6.20335 35.6271C7.85055 37.4286 9.85462 38.867 12.0879 39.8507C14.3211 40.8343 16.7346 41.3417 19.1746 41.3403C25.2526 41.3403 30.623 38.2439 33.7892 33.5436C33.8319 33.4823 33.8728 33.4209 33.9118 33.3596C34.2255 32.8845 34.5149 32.3939 34.779 31.8895C34.8143 31.8244 34.8477 31.7594 34.883 31.6925C36.1426 29.2193 36.7975 26.4821 36.7939 23.7062C36.7939 13.9821 28.8905 6.07204 19.1746 6.07204C9.46055 6.07204 1.5553 13.9821 1.5553 23.7062C1.55301 25.6832 1.88515 27.6463 2.53762 29.5124C1.61153 27.1163 1.13803 24.569 1.1412 22C1.1412 21.554 1.15602 21.1098 1.18571 20.6711C2.08453 10.6293 10.5376 2.73591 20.7995 2.73591C31.6592 2.73591 40.4949 11.5772 40.4949 22.4479C40.4949 33.3169 31.6592 42.1581 20.7995 42.1581C15.6031 42.1616 10.6174 40.1031 6.93504 36.4337ZM40.5692 31.5735C40.5395 31.6367 40.506 31.698 40.4726 31.7594C40.1791 32.3151 39.861 32.8559 39.5181 33.3819C39.481 33.4395 39.4438 33.4953 39.4048 33.5529C35.6611 39.1807 29.2656 42.8959 22.0177 42.8959C17.4933 42.901 13.0911 41.4268 9.48101 38.6974C12.7976 41.0229 16.7499 42.2684 20.7995 42.264C31.7168 42.264 40.5989 33.3744 40.5989 22.4479C40.5989 11.5214 31.7168 2.63182 20.7995 2.63182C11.624 2.63182 3.8858 8.91195 1.64998 17.4038C3.7484 8.08676 12.0827 1.10595 22.0177 1.10595C33.5293 1.10595 42.8941 10.4787 42.8941 22C42.8984 25.3317 42.101 28.6155 40.5692 31.5735V31.5735Z" fill="white" stroke="white" stroke-width="0.4"/>
+				</svg>
+			</div>
+			<div class="popup-container">
+				<h2 class="popup__title">
+					Zanechte své telefonní číslo, zavoláme vám zpět
+			</h2>
+			<form action="#" class="form popup__form">				
+				<input type="text" name="name" placeholder="Tvé jméno" class="form__input">
+				<input type="tel" name="tel" placeholder="Telefonní číslo" class="form__input">
+				<button type="submit" class="btn form__btn">Poslat</button>
+			</form>
+			</div>
+	   </div>
+   </div>
 
 	<script src="js/jquery-3.5.1.min.js"></script>
 	<script src="libs/slick.min.js"></script>
+	<script src="libs/wow.min.js"></script>
+	<script src="libs/jquery.arcticmodal-0.3.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

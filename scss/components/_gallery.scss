@@ -1,0 +1,110 @@
+.gallery {
+    padding-top: 90px;
+    padding-bottom: 90px;
+
+    &-container {
+        max-width: 1400px;
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    &-slider {
+        position: relative;
+        margin-top: 238px;
+        margin-bottom: 194px;
+
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: -147px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(224, 175, 188, 0.3);
+            max-width: 1370px;
+            width: 77%;
+            height: 720px;
+            z-index: 0;
+        }
+
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: -147px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: url('../img/icons/gallery-bg.svg') no-repeat center center;
+            opacity: 0.7;
+            max-width: 1370px;
+            width: 100%;
+            height: 720px;
+            z-index: -1;
+        }
+
+        &__item {
+            outline: none;
+            margin: 0 10px;
+        }
+    }
+}
+
+.gallery-slider {
+    .slick-dots {
+        position: absolute;
+        bottom: -210px;
+        display: flex;
+        left: 50%;
+        margin-left: 100px;
+        max-width: 1162px;
+        width: 64%;
+        background: #e0e0e0;
+        overflow: hidden;
+    }
+
+    .slick-dots li {
+        display: inline-block;
+        margin-right: 0;
+        max-width: 430px;
+        width: 100%;
+
+    }
+
+    .slick-dots li button {
+        height: 2px;
+        border: none;
+        font-size: 0;
+        outline: none;
+        border-radius: 0;
+
+    }
+
+    .slick-dots li.slick-active {
+        box-shadow: -377px 0 0 #E0AFBC, -755px 0 0 #E0AFBC;
+    }
+    .slick-dots li.slick-active button {
+        background: #e0afbc;
+        width: 100%;
+        z-index: 10;
+        
+    }
+
+    .slick-next.slick-disabled {
+        background: url('../img/icons/arrow-right-d.svg') no-repeat center center;
+        pointer-events: none;
+    }
+
+    .slick-prev.slick-disabled {
+        background: url('../img/icons/arrow-left-d.svg') no-repeat center center;
+        pointer-events: none;
+    }
+
+    &__item img {
+        width: 100%;
+        height: 425px;  
+        object-fit: cover;
+      }
+}

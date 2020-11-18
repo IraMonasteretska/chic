@@ -1,0 +1,138 @@
+.services {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.article {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 84px;
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        margin-top: 190px;
+        margin-right: -15px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 65%;
+        background: url('../img/icons/services-line.svg') no-repeat left center;
+        width: 24px;
+        height: 24px;
+    }
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        margin-top: 190px;
+        
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: var(--pink-color);
+        width: 65%;
+        height: 1px;
+    }
+    &__img {
+        width: 46%;
+        img {
+            width: 100%;
+        }
+    }
+    &__content {
+        width: 54%;
+        padding-left: 114px;
+        padding-top: 160px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 48px;
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
+        color: var(--dark-color);
+        position: relative;
+        max-width: 315px;
+        width: max-content;
+        z-index: 3;
+        margin-bottom: 56px;
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            height: 16px;
+            width: 66%;
+            left: -10px;
+            bottom: 2px;
+            background-color: rgba(224, 175, 188, 0.3);
+            z-index: -1;
+        }
+        &:after {
+            content: 'pmu';
+            display: block;
+            position: absolute;
+            top: -35px;
+            left: -40px;
+            font-weight: 700;
+            font-size: calc(70px + 14 * (100vw / 1920));
+            line-height: 114px;
+            text-transform: uppercase;
+            color: #f2f2f2;
+            z-index: -5;
+        }
+    }
+
+    &__text {
+        position: relative;
+        font-size: 14px;
+        line-height: 24px;
+        color: #4F4F4F;
+        max-width: 480px;
+        z-index: 5;
+        
+    }
+}
+
+.pedikura {
+    &__content {
+        padding-left: 32px;
+    }
+    &:before {
+        left: 65%;
+    }
+    &:after {
+        left: 0;
+    }
+
+    &__title {
+        margin-bottom: 36px;
+        &:after {
+            content: 'Manikura pedikura';
+            top: -64px;
+        }
+    }
+}
+
+.kosmetika {
+    &__title {
+        &:after {
+            content: 'kosmetika';
+        }
+    }
+}
+
+.tatoo {
+    &__title {
+        &:after {
+            content: 'Tatoo';
+        }
+    }
+    &:before {
+        left: 65%;
+    }
+    &:after {
+        left: 0;
+    }
+}

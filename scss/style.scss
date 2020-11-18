@@ -2,10 +2,15 @@
 @import "vars";
 @import "fonts";
 @import "../libs/slick.css";
+@import "../libs/animate.css";
+@import "../libs/jquery.arcticmodal-0.3.css";
 
 /* Components  */
 @import "components/header";
 @import "components/first";
+@import "components/about";
+@import "components/gallery";
+@import "components/services";
 
 /* Media queries */
 @import "media";
