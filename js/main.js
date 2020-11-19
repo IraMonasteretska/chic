@@ -57,8 +57,36 @@ $(document).ready(function(){
   /* Arctick Modal */
 
   $('.popup__btn').click(function(e) {
-    e.preventDefault();
-    $('#popup').arcticmodal();
-});
+      e.preventDefault();
+      $('#popup').arcticmodal();
+  });
+
+    /* Burger menu */
+  $('.menu__burger').click(function(){
+    $('.menu').toggleClass('active');
+    $('.lang').toggleClass('active');
+    $('.menu__burger--close').fadeToggle();
+    $('.menu__burger--img').fadeToggle();
+    $(this).toggleClass('active');
+    $('body').toggleClass('lock');
+  });
+
+  $('.menu__item').click(function() {
+    $('.menu__burger,.menu,.lang').removeClass('active');
+    $('.menu__burger--close').fadeToggle();
+    $('.menu__burger--img').fadeToggle();
+    $('body').removeClass('lock');
+  });
+
+    /* Parallax */  
+    $(window).bind('scroll',function(e){
+        parallaxScroll();
+  });
+  function parallaxScroll(){
+      var scrolled = $(window).scrollTop() - 400;
+      $('.parallax').css({
+        "transform" : "translate(0, "+ (scrolled*0.15) + "px"
+      });
+  }
   
 });

@@ -16,20 +16,20 @@
 .header {
     padding-top: 30px;
     padding-bottom: 50px;
+    &__menu {
+        margin-right: 54px;    
+    }
     &__social {
         margin-right: 54px;
     }
     &__lang {
         margin-right: auto;
     }
-    &__menu {
-        margin-right: 54px;
-    }
 }
 
 .social {
     display: flex;
-
+    z-index: 10;
     &__item {
         
         border: 1px solid #e0e0e0;
@@ -77,6 +77,7 @@
     line-height: 20px;
     letter-spacing: 0.15em;
     text-transform: uppercase;
+    z-index: 6;
     &-item {
         color: #171717;
         transition: color 0.3s ease;
@@ -99,7 +100,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    z-index: 10;
     &__svg path {
         fill: #171717;
         transition: fill 0.3s ease;
@@ -148,7 +149,7 @@
 
 .menu {
     display: flex;
-    max-width: 543px;
+    max-width: 540px;
     width: 100%;
     justify-content: space-between;
 
@@ -156,6 +157,7 @@
         line-height: 20px;
         letter-spacing: 0.15em;
         position: relative;
+        width: max-content;
         a {
             &:before {
                 content: '';
@@ -177,6 +179,18 @@
     }
     &__burger {
         display: none;
+        background-color: transparent;
+        outline: none;
+        transition: background-color 0.3s ease;
+        &--close {
+            position: absolute;
+            display: none;
+            width: 22px;
+        }
+        &.active {
+            background-color: rgba(224,175,188,0.2);
+            transition: background-color 0.3s ease;
+        }
     }
 }
 

@@ -1,6 +1,7 @@
 .about {
     padding-top: 28px;
     padding-bottom: 45px;
+
     &__scroll {
         position: fixed;
         left: 75px;
@@ -25,6 +26,7 @@
             background-color: #171717;
         }
     }
+
     &__phone {
         position: fixed;
         display: flex;
@@ -38,18 +40,22 @@
         height: 72px;
         animation: move 5s infinite;
         z-index: 10;
+
         &--svg {
             cursor: pointer;
+
             path {
                 fill: #E0AFBC;
                 transition: fill 0.3s ease;
             }
+
             &:hover path {
                 fill: #D69FAE;
                 transition: fill 0.3s ease;
             }
-        }       
+        }
     }
+
     &__btn {
         margin: 0 auto;
         display: block;
@@ -62,16 +68,17 @@
         color: #171717;
         border: 1px solid var(--pink-color);
         padding: 24px 44px;
-        margin-bottom: 194px;
+        margin-bottom: 94px;
         background-color: transparent;
         transition: background-color 0.3s ease, font-weight 0.3s ease;
-        
+
         &:hover {
             background-color: var(--pink-color);
             font-weight: 700;
             transition: background-color 0.3s ease, font-weight 0.3s ease;
         }
     }
+
     &__text {
         line-height: 30px;
         letter-spacing: 0.15em;
@@ -80,16 +87,21 @@
     }
 }
 
+.parallax {
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+
 @keyframes move {
     0% {
-      transform: scale(1);
+        transform: scale(1);
     }
-  
+
     20% {
         transform: scale(1.1);
     }
-  
+
     100% {
         transform: scale(1.1);
     }
-  }
+}

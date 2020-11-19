@@ -47,8 +47,33 @@
         width: 720px;
     }
     .menu {
-        display: none;
-
+        display: block;
+        position: fixed;
+        background: #fff;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        transform: translateY(-130%);
+        max-width: 100%;
+        height: 100vh;
+        z-index: 5;
+        transition: transform 0.3s ease;
+        &__item {
+            font-size: 18px;
+            line-height: 24px;
+            margin: 0 auto;
+            margin-bottom: 40px;      
+        }
+        &__item:last-child {
+            margin-bottom: 0;
+        }
+        &.active {
+            transform: translateY(0);
+            overflow: scroll;
+            transition: transform 0.3s ease;
+        }
         &__burger {
             display: flex;
             justify-content: center;
@@ -56,12 +81,14 @@
             width: 64px;
             height: 64px;
             border: 1px solid #e0e0e0;
-            img {
+            z-index: 10;
+            &--img {
                 width: 28px;
             }
         }
     }
     .gallery {
+        margin-top: 45px;
         padding-top: 45px;
     }
     .gallery-slider {
@@ -75,6 +102,9 @@
     }
     .about {
         padding-bottom: 0;
+        &__btn {
+            margin-bottom: 30px;
+        }
     }
     .about__phone {
         right: 30px;
@@ -82,6 +112,39 @@
     .article__content {
         padding-left: 80px;
         padding-top: 80px;
+    }   
+    .article {
+        display: flex;
+        &__img {
+            width: 30%;
+            img {
+                height: 400px;
+                object-fit: cover;
+            }
+        }
+        &__content  {
+            padding-top: 40px;
+            width: 70%;
+        }
+        &:before {
+            margin-top: 130px;
+            right: 80%;
+        }
+        &:after {
+            margin-top: 130px;
+            right: 0;
+            width: 80%;
+        }
+    }
+    .pedikura {
+        &:before {
+            left: 80%;
+        }
+    }
+    .tatoo {
+        &:before {
+            left: 80%;
+        }
     }
 }
 
@@ -196,6 +259,21 @@
             left: 20px;
         }
     }
+    .article {
+        &:before {
+            display: none;
+        }
+        &:after {
+            display: none;
+        }
+        &__img {
+            display: none;
+        }
+        &__content {
+            width: 100%;
+        }
+    }
+    
 }
 
 @media screen and (max-width: 576px) {
@@ -209,6 +287,16 @@
 
     .lang {
         display: none;
+        opacity: 0;
+        &.active {
+            display: flex;
+            position: fixed;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 50px;
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
     }
 
     .social {
@@ -232,8 +320,11 @@
         width: 48px;
         height: 48px;
 
-        img {
+        &--img {
             width: 18px;
+        }
+        &--close {
+            width: 14px;
         }
     }
     .about__btn {
@@ -277,6 +368,21 @@
         }
         .slick-dots {
             bottom: -110px;
+        }
+    }
+    .article {
+        margin-bottom: 50px;
+        &__content  {
+            padding-left: 0;
+        }
+        &__title {
+            text-align: center;
+            margin: 0 auto 56px;
+            &:after {
+                font-size: 43px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
         }
     }
     
