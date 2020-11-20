@@ -93,13 +93,13 @@
 						<img src="img/first-1.jpg" alt="girls lips">
 					</div>
 					<div class="slider__item">
-						<img src="img/first-2.jpg" alt="girls lips">
+						<img src="img/first-2.jpg" alt="girl">
 					</div>
 					<div class="slider__item">
-						<img src="img/first-3.jpg" alt="girls lips">
+						<img src="img/first-3.jpg" alt="girl">
 					</div>
 					<div class="slider__item">
-						<img src="img/first-4.jpg" alt="girls lips">
+						<img src="img/first-4.jpg" alt="girl">
 					</div>
 				</div>
 			</div>
@@ -157,61 +157,61 @@
 		</section>
 		<section class="services">
 			<div class="container">
-				<h2 class="services__title section__title">
+				<h2 class="services__title section__title parallax-window" data-parallax="scroll">
 					Sluzby
 				</h2>
 				<div class="services__articles">
-					<article class="article">
-						<div class="article__img">
+					<article class="article slideInUp wow">
+						<div class="article__img" id="f-1">
 							<img src="img/article-1.jpg" alt="girl smile">
 						</div>
 						<div class="article__content">
-							<h3 class="article__title">
+							<h3 class="article__title" id="h-1">
 								PMU
 							</h3>
-							<p class="article__text">
+							<p class="article__text" id="t-1">
 								Nunc sed augue ornare quam iaculis elementum ac vel magna. Proin scelerisque dolor 
 								sit amet justo convallis malesuada. Interdum et malesuada fames ac ante ipsum primis 
 								in faucibus. Sed placerat magna sit amet magna ornare tincidunt. Phasellus ac turpis erat. Vivamus id ullamcorper ligula, vitae vestibulum nulla.
 							</p>
 						</div>
 					</article>
-					<article class="article pedikura">
+					<article class="article pedikura slideInUp wow">
 						<div class="article__content pedikura__content">
-							<h3 class="article__title pedikura__title">
+							<h3 class="article__title pedikura__title" id="h-2">
 								MANIKURA PEDIKURA
 							</h3>
-							<p class="article__text">
+							<p class="article__text" id="t-2">
 								Nunc sed augue ornare quam iaculis elementum ac vel magna. Proin scelerisque dolor sit amet justo convallis malesuada. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed placerat magna sit amet magna ornare tincidunt. Phasellus ac turpis erat. Vivamus id ullamcorper ligula, vitae vestibulum nulla.
 							</p>
 						</div>
-						<div class="article__img">
+						<div class="article__img" id="f-2">
 							<img src="img/article-2.jpg" alt="girl smile">
 						</div>
 					</article>
-					<article class="article kosmetika">
-						<div class="article__img">
+					<article class="article kosmetika slideInUp wow">
+						<div class="article__img" id="f-3">
 							<img src="img/article-3.jpg" alt="girl smile">
 						</div>
 						<div class="article__content">
-							<h3 class="article__title kosmetika__title">
+							<h3 class="article__title kosmetika__title" id="h-3">
 								KOSMETIKA
 							</h3>
-							<p class="article__text">
+							<p class="article__text" id="t-3">
 								Nunc sed augue ornare quam iaculis elementum ac vel magna. Proin scelerisque dolor sit amet justo convallis malesuada. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed placerat magna sit amet magna ornare tincidunt. Phasellus ac turpis erat. Vivamus id ullamcorper ligula, vitae vestibulum nulla.
 							</p>
 						</div>
 					</article>
-					<article class="article tatoo">
+					<article class="article tatoo slideInUp wow">
 						<div class="article__content pedikura__content">
-							<h3 class="article__title tatoo__title">
+							<h3 class="article__title tatoo__title" id="h-4">
 								MINI TATOO
 							</h3>
-							<p class="article__text">
+							<p class="article__text" id="t-4">
 								Nunc sed augue ornare quam iaculis elementum ac vel magna. Proin scelerisque dolor sit amet justo convallis malesuada. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed placerat magna sit amet magna ornare tincidunt. Phasellus ac turpis erat. Vivamus id ullamcorper ligula, vitae vestibulum nulla.
 							</p>
 						</div>
-						<div class="article__img">
+						<div class="article__img" id="f-4">
 							<img src="img/article-4.jpg" alt="girl smile">
 						</div>
 					</article>
@@ -219,8 +219,496 @@
 			</div>
 		</section>
 		<section class="price" id="price">
-
+			<div class="price-container">
+				<h2 class="section__title price__title">
+					Cenik
+				</h2>
+				<div class="tabs">
+					<div class="tab-nav wow slideInLeft" data-wow-duration="2s">
+						<ul class="tab__list">
+							<li class="tab__item"><a href="#tab_01" class="active">PMU</a></li>
+							<li class="tab__item"><a href="#tab_02">Manikura Pedikura</a></li>
+							<li class="tab__item"><a href="#tab_03">Kosmetika</a></li>
+							<li class="tab__item"><a href="#tab_04">Mini Tatoo</a></li>
+						</ul>
+					</div>
+					<div class="tabs__body wow slideInRight" data-wow-duration="2s">
+						<div class="pane faded in active" id="tab_01">
+							<h3 class="tab__title">
+								PMU
+							</h3>
+							<button class="tab__close">
+								<img src="img/icons/menu-close.svg" alt="close">
+							</button>
+							<div class="tab__btn">
+								<a href="#tab_02">Manikura</a>
+							</div>
+							<ul class="pane__list">
+								<li class="pane__item">
+									<p class="pane__item--name">Классический обрезной маникюр</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">240 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Комбинированный маникюр (классический + аппаратный)</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">260 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Аппаратный маникюр</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">250 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Европейский необрезной маникюр</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">270 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Мужской маникюр</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">250 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Снятие гель-лак</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">250 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Ремонт ногтя</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">250 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Покрытие гель-лак</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">250 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Дизайн 1 ноготь</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">250 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Классический обрезной маникюр</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">240 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Комбинированный маникюр (классический + аппаратный)</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">260 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Аппаратный маникюр</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">250 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Европейский необрезной маникюр</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">270 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Мужской маникюр</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">250 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Снятие гель-лак</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">250 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Ремонт ногтя</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">250 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Покрытие гель-лак</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">250 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Дизайн 1 ноготь</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">250 czk</div>
+								</li>
+							</ul>
+						</div>
+						<div class="pane faded" id="tab_02" >
+							<h3 class="tab__title">
+								Manikúra
+							</h3>
+							<button class="tab__close">
+								<img src="img/icons/menu-close.svg" alt="close">
+							</button>
+							<div class="tab__btn">
+								<a href="#tab_03">Pedikura</a>
+							</div>
+							<ul class="pane__list">
+								<li class="pane__item">
+									<p class="pane__item--name">Классический обрезной маникюр</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">240 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Комбинированный маникюр (классический + аппаратный)</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">260 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Аппаратный маникюр</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">250 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Европейский необрезной маникюр</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">270 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Мужской маникюр</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">250 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Снятие гель-лак</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">250 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Ремонт ногтя</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">250 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Покрытие гель-лак</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">250 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Дизайн 1 ноготь</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">250 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Классический обрезной маникюр</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">240 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Комбинированный маникюр (классический + аппаратный)</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">260 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Аппаратный маникюр</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">250 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Европейский необрезной маникюр</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">270 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Мужской маникюр</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">250 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Снятие гель-лак</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">250 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Ремонт ногтя</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">250 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Покрытие гель-лак</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">250 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Дизайн 1 ноготь</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">250 czk</div>
+								</li>
+							</ul>
+						</div>
+						<div class="pane faded" id="tab_03" >
+							<h3 class="tab__title">
+								Kosmetika
+							</h3>
+							<button class="tab__close">
+								<img src="img/icons/menu-close.svg" alt="close">
+							</button>
+							<div class="tab__btn tab__btn--kosmetika">
+								<a href="#tab_04">Mini Tatoo</a>
+							</div>
+							<ul class="pane__list">
+								<li class="pane__item">
+									<p class="pane__item--name">Классический обрезной маникюр</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">240 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Комбинированный маникюр (классический + аппаратный)</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">260 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Аппаратный маникюр</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">250 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Европейский необрезной маникюр</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">270 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Мужской маникюр</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">250 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Снятие гель-лак</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">250 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Ремонт ногтя</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">250 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Покрытие гель-лак</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">250 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Дизайн 1 ноготь</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">250 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Классический обрезной маникюр</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">240 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Комбинированный маникюр (классический + аппаратный)</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">260 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Аппаратный маникюр</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">250 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Европейский необрезной маникюр</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">270 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Мужской маникюр</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">250 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Снятие гель-лак</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">250 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Ремонт ногтя</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">250 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Покрытие гель-лак</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">250 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Дизайн 1 ноготь</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">250 czk</div>
+								</li>
+							</ul>
+						</div>
+						<div class="pane faded" id="tab_04" >
+							<h3 class="tab__title">
+								Mini Tatoo
+							</h3>
+							<button class="tab__close">
+								<img src="img/icons/menu-close.svg" alt="close">
+							</button>
+							<div class="tab__btn tab__btn--tatoo">
+								<a href="#tab_01">PMU</a>
+							</div>
+							<ul class="pane__list">
+								<li class="pane__item">
+									<p class="pane__item--name">Классический обрезной маникюр</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">240 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Комбинированный маникюр (классический + аппаратный)</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">260 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Аппаратный маникюр</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">250 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Европейский необрезной маникюр</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">270 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Мужской маникюр</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">250 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Снятие гель-лак</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">250 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Ремонт ногтя</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">250 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Покрытие гель-лак</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">250 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Дизайн 1 ноготь</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">250 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Классический обрезной маникюр</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">240 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Комбинированный маникюр (классический + аппаратный)</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">260 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Аппаратный маникюр</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">250 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Европейский необрезной маникюр</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">270 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Мужской маникюр</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">250 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Снятие гель-лак</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">250 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Ремонт ногтя</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">250 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Покрытие гель-лак</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">250 czk</div>
+								</li>
+								<li class="pane__item">
+									<p class="pane__item--name">Дизайн 1 ноготь</p>
+									<span class="pane__item--line"></span>
+									<div class="pane__item--price">250 czk</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
+		<section class="overview" id="overview"> 
+			<div class="header-container">
+				<h2 class="overview__title section__title">
+					Recenze
+				</h2>
+				<div class="overview__text overview__text--one" id="o-1">Recenze</div>
+				<div class="overview__text overview__text--two" id="o-2">Recenze</div>
+				<div class="overview-slider">
+					<div class="overview-slider__item">
+						<img src="img/overview-1.jpg" alt="overview">
+					</div>
+					<div class="overview-slider__item">
+						<img src="img/overview-2.jpg" alt="overview">
+					</div>
+					<div class="overview-slider__item">
+						<img src="img/overview-3.jpg" alt="overview">
+					</div>
+					<div class="overview-slider__item">
+						<img src="img/overview-4.jpg" alt="overview">
+					</div>
+					<div class="overview-slider__item">
+						<img src="img/overview-5.jpg" alt="overview">
+					</div>
+					<div class="overview-slider__item">
+						<img src="img/overview-6.jpg" alt="overview">
+					</div>
+					<div class="overview-slider__item">
+						<img src="img/overview-1.jpg" alt="overview">
+					</div>
+					<div class="overview-slider__item">
+						<img src="img/overview-2.jpg" alt="overview">
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<h2 class="section__title footer__title">
+				Kontakt
+			</h2>
+			<div class="container">
+				<div class="footer__anim anim">
+					<div class="anim__logo wow animated fadeIn">
+						<img src="img/footer-logo.png" alt="Chic Beauty Studio">
+					</div>
+					<span class="anim__line wow"></span>
+				</div>
+				<div class="footer-address address slideInDown wow">
+					<h3 class="address__title">
+						Václavské nám. 68, 110 00 Nové Město, <span class="address__title--span">Česká republika</span>
+					</h3>
+					<a href="tel:+420773217914" class="address__phone">+42 077 321 79 14</a>
+					<a href="tel:+420773217914" class="address__phone">+42 077 321 79 14</a>
+					<button class="btn address__btn">Domluvte si schůzku</button>
+					<a href="#" class="address__maps">Otevřete Google Maps</a>	
+				</div>
+				<p class="footer__text">
+					© 2020 Chic beauty studio
+				</p>
+			</div>
+		</footer>
 	</main>
 	<div style="display: none;">
 		<div class="popup" id="popup">

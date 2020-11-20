@@ -1,6 +1,7 @@
 @import "overall";
 @import "vars";
 @import "fonts";
+@import "../libs/animate.css";
 @import "../libs/slick.css";
 @import "../libs/animate.css";
 @import "../libs/jquery.arcticmodal-0.3.css";
@@ -11,6 +12,9 @@
 @import "components/about";
 @import "components/gallery";
 @import "components/services";
+@import "components/price";
+@import "components/overview";
+@import "components/footer";
 
 /* Media queries */
 @import "media";

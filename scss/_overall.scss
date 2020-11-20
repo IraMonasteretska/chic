@@ -33,6 +33,7 @@ body {
   font-weight: 400;
   font-size: 15px;
   color: var(--text-color);
+
   &.lock {
     overflow: hidden;
   }
@@ -121,17 +122,18 @@ select {
   text-transform: uppercase;
   color: #171717;
   position: relative;
-    &:before {
-        content: '';
-        display: block;
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        height: 16px;
-        background: rgba(224, 175, 188, 0.3);
-        z-index: -1;
-    }
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 16px;
+    background: rgba(224, 175, 188, 0.3);
+    z-index: -1;
+  }
 }
 
 .slider {
@@ -140,8 +142,9 @@ select {
 
 .slider__item {
   outline: none;
+
   img {
-      width: 100%;
+    width: 100%;
   }
 }
 
@@ -155,7 +158,7 @@ select {
   height: 30px;
   z-index: 1;
   outline: none;
-  
+
 }
 
 .slick-prev {
@@ -179,4 +182,9 @@ select {
 .slick-next:hover {
   transform: translateX(5px);
   transition: transform 0.3s ease;
+}
+
+section {
+  overflow: hidden;
+  position: relative;
 }
