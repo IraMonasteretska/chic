@@ -1,4 +1,4 @@
-$(document).ready(function(){
+
   /* Slick slider */ 
 
   $('.first-slider').slick({
@@ -227,5 +227,3 @@ $(document).ready(function(){
   } else {
     
   }
-  
-});
