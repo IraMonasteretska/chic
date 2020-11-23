@@ -120,20 +120,12 @@
         align-items: center;
         width: 64px;
         height: 64px;
-        color: #171717;
-        border: 1px solid #e0e0e0;
+        color: #171717;      
         transition: border 0.3s ease;
+    }
 
-        &:hover {
-            cursor: pointer;
-            border: 1px solid var(--pink-color);
-            transition: border 0.3s ease;
-
-            path {
-                fill: var(--pink-color);
-                transition: fill 0.3s ease;
-            }
-        }
+    a {
+        border: 1px solid #e0e0e0;
     }
 
     &__number {
@@ -148,8 +140,18 @@
         border: 1px solid #e0e0e0;
         color: #171717;
         transition: border 0.3s ease, color 0.3s ease;
+    }
 
-        &:hover {
+    &:hover {
+        color: var(--pink-color);
+        
+        transition: color 0.3s ease, border 0.3s ease;
+        path {
+            fill: var(--pink-color);
+            transition: fill 0.3s ease;
+        }
+
+        a {
             border: 1px solid var(--pink-color);
             color: var(--pink-color);
             transition: color 0.3s ease, border 0.3s ease;

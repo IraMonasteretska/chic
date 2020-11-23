@@ -70,9 +70,12 @@
         padding: 24px 0;
         width: 100%;
         margin: 36px 0;
+        background-color: #f9c7d4;
+        transition: background-color 0.3s ease;
 
         &:hover {
-            color: #fff;
+            background-color: #e0afbc;
+            transition: background-color 0.3s ease;
         }
     }
 

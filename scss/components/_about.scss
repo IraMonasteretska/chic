@@ -57,6 +57,7 @@
     }
 
     &__btn {
+        font-weight: 700;
         margin: 0 auto;
         display: block;
         max-width: 384px;
@@ -74,7 +75,6 @@
 
         &:hover {
             background-color: var(--pink-color);
-            font-weight: 700;
             transition: background-color 0.3s ease, font-weight 0.3s ease;
         }
     }
