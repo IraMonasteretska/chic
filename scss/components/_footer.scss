@@ -2,9 +2,11 @@
     padding-bottom: 57px;
     background: url('../img/footer-bg.jpg') no-repeat center top / cover;
     position: relative;
+
     &__title {
-        transform: translateY(-250px)
+        transform: translateY(-140px)
     }
+
     &__text {
         max-width: 522px;
         width: 100%;
@@ -26,17 +28,20 @@
     margin-left: auto;
     margin-bottom: 54px;
     position: relative;
+
     &__title {
         font-weight: 700;
         font-size: 24px;
         line-height: 42px;
         color: #171717;
         margin-bottom: 62px;
+
         &--span {
             font-weight: 700;
             color: var(--pink-color);
         }
     }
+
     &__phone {
         display: block;
         padding-left: 32px;
@@ -46,6 +51,7 @@
         color: #171717;
         margin-bottom: 12px;
         position: relative;
+
         &:before {
             content: '';
             display: block;
@@ -58,12 +64,18 @@
             height: 18px;
         }
     }
+
     &__btn {
         color: #171717;
         padding: 24px 0;
         width: 100%;
         margin: 36px 0;
+
+        &:hover {
+            color: #fff;
+        }
     }
+
     &__maps {
         display: block;
         text-align: center;
@@ -79,6 +91,7 @@
     max-width: 800px;
     height: 500px;
     width: 100%;
+
     &__logo {
         display: flex;
         justify-content: center;
@@ -88,18 +101,19 @@
         position: absolute;
         left: 122px;
         top: 125px;
-        background: url('../../img/icons/anim-circle.svg') no-repeat center center / cover;
+        background: url('../img/icons/anim-circle.svg') no-repeat center center / contain;
         animation-delay: 2s;
 
         img {
             width: 86px;
             height: 86px;
         }
-        
+
     }
+
     &__line {
         position: absolute;
-        background-color: var(--pink-color); 
+        background-color: var(--pink-color);
         transform: translateX(0);
         width: 100%;
         height: 1px;
@@ -119,6 +133,4 @@
     to {
         transform: translateX(0);
     }
-  }
-
-
+}

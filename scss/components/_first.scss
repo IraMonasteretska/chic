@@ -30,16 +30,30 @@
 
 .first {
     position: relative;
+    overflow: visible;
 }
 
 .first-slider {
+    background-color: #a18473;
+
     .slider__item {
         height: 660px;
-    }
 
-    .slider__item img {
-        height: 660px;
-        object-fit: cover;
+        &--one {
+            background: url('../img/first-1.jpg') no-repeat center top / cover;
+        }
+
+        &--two {
+            background: url('../img/first-2.jpg') no-repeat center top / cover;
+        }
+
+        &--three {
+            background: url('../img/first-3.jpg') no-repeat center top / cover;
+        }
+
+        &--four {
+            background: url('../img/first-4.jpg') no-repeat center top / cover;
+        }
     }
 }
 

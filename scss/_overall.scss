@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 ul,
 ol {
   padding: 0;
@@ -35,7 +39,7 @@ body {
   color: var(--text-color);
 
   &.lock {
-    overflow: hidden;
+    overflow: hidden !important;
   }
 }
 
@@ -187,4 +191,15 @@ select {
 section {
   overflow: hidden;
   position: relative;
+}
+
+.visuallyhidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
 }

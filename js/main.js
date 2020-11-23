@@ -33,7 +33,7 @@ $(document).ready(function(){
             }
         },
         {
-          breakpoint: 1024,
+          breakpoint: 1025,
           settings: {
               slidesToShow: 2,
               slidesToScroll: 1,
@@ -75,12 +75,18 @@ $(document).ready(function(){
           breakpoint: 1480,
           settings: {
               slidesToShow: 4,
-              slidesToScroll: 1,
-              arrows: false
+              slidesToScroll: 1
           }    
         },
         {
           breakpoint: 1160,
+          settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1
+          }    
+        },
+        {
+          breakpoint: 1050,
           settings: {
               slidesToShow: 3,
               slidesToScroll: 1,
@@ -106,6 +112,15 @@ $(document).ready(function(){
 
     ]
   });
+
+  $('.gallery-slider, .overview-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
+    $('.slick-dots li').removeClass('color');
+    $('.slick-active').prevAll().addClass('color');
+  });
+
+  $('.gallery-slider').slick('setPosition');
+
+  
   
   /* Arctick Modal */
 
@@ -143,8 +158,8 @@ $(document).ready(function(){
       });
 
       let overview = $(window).scrollTop() - 6600;
-      $('#o-1').css({"transform" : "translate("+ overview*0.7 + "px , "+ 0 + "px"});
-      $('#o-2').css({"transform" : "translate("+  -overview*0.7 + "px , "+ 0 + "px"});
+      $('#o-1').css({"transform" : "translate("+ overview*0.6 + "px , "+ 0 + "px"});
+      $('#o-2').css({"transform" : "translate("+  -overview*0.6 + "px , "+ 0 + "px"});
       //console.log($(window).scrollTop());
 
       var services1 = $(this).scrollTop() - 2700;
@@ -205,6 +220,8 @@ $(document).ready(function(){
         $('.tabs__body').hide(200);
         $('.tab-nav').show();
       });
+
+      $('.tabs__body').removeClass('slideInRight');
 
       
   } else {
